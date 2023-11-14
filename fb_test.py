@@ -1,7 +1,7 @@
 import unittest
 
 from graph import Graph, T, Edge
-from deep import ford_bellman
+from fb import ford_bellman
 
 
 class MyTestDeep(unittest.TestCase):

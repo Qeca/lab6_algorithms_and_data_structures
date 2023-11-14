@@ -1,3 +1,4 @@
+import pickle
 from dataclasses import dataclass
 from typing import TypeVar, Generic, Callable
 
@@ -85,4 +86,15 @@ class Graph(Generic[T]):
 
 
 if __name__ == '__main__':
-    ...
+    G = Graph()
+    G.add_edge('A', 'B', 2)
+    G.add_edge("B", "C", 12)
+
+    # Сохраняем граф с использованием pickle
+    with open("graph.pickle", "wb") as pickle_file:
+        pickle.dump(G, pickle_file)
+
+    # Загружаем граф из файла
+    with open("graph.pickle", "rb") as pickle_file:
+        loaded_graph = pickle.load(pickle_file)
+    loaded_graph.print_all_edges()
