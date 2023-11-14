@@ -1,0 +1,6 @@
+Edge(V1: 1, V2: 2, Weight: 10)
+Edge(V1: 1, V2: 3, Weight: 30)
+Edge(V1: 2, V2: 1, Weight: 10)
+Edge(V1: 2, V2: 3, Weight: 20)
+Edge(V1: 3, V2: 2, Weight: 20)
+Edge(V1: 3, V2: 1, Weight: 30)
